@@ -1,7 +1,11 @@
-job('jenkins-seed-jobs') {
+job('jenkins_seed_jobs') {
     //Checkout the repo in Jenkins
     scm {
-        git('https://github.com/lsmarsden/jenkins-jobs.git')
+        git {
+            remote {
+                github('lsmarsden/jenkins-jobs')
+            }
+        }
     }
     steps {
         // process job DSL scripts
