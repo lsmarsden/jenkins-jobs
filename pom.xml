@@ -28,6 +28,12 @@
             <artifactId>job-dsl-core</artifactId>
             <version>1.79</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkinsci.plugins/pipeline-model-definition -->
+        <dependency>
+            <groupId>org.jenkinsci.plugins</groupId>
+            <artifactId>pipeline-model-definition</artifactId>
+            <version>2.2075.vce74e77b_ce40</version>
+        </dependency>
 
     </dependencies>
 </project>
