@@ -7,5 +7,10 @@ pipeline {
                 echo('Building')
             }
         }
+        stage('Testing') {
+            steps {
+                echo('Now testing!')
+            }
+        }
     }
 }
