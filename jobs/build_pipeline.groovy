@@ -8,7 +8,7 @@ pipelineJob('build_pipeline') {
                     }
                 }
             }
-            scriptPath('build_pipeline.Jenkinsfile')
+            scriptPath('pipelines/build_pipeline.Jenkinsfile')
         }
     }
 }
