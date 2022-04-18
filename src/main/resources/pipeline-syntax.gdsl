@@ -37,6 +37,7 @@ method(name: 'mail', type: 'Object', namedParams: [parameter(name: 'subject', ty
 method(name: 'milestone', type: 'Object', params: [ordinal:'java.lang.Integer'], doc: 'The milestone step forces all builds to go through in order')
 method(name: 'milestone', type: 'Object', namedParams: [parameter(name: 'ordinal', type: 'java.lang.Integer'), parameter(name: 'label', type: 'java.lang.String'), parameter(name: 'unsafe', type: 'boolean'), ], doc: 'The milestone step forces all builds to go through in order')
 method(name: 'node', type: 'Object', params: [label: String, body:'Closure'], doc: 'Allocate node')
+method(name: 'pipeline', type: 'Object', params: [body:'Closure'], doc: 'Declare pipeline')
 method(name: 'properties', type: 'Object', params: [properties:'java.util.List'], doc: 'Set job properties')
 method(name: 'publishChecks', type: 'Object', params: [:], doc: 'Publish customized checks to SCM platforms')
 method(name: 'publishChecks', type: 'Object', namedParams: [parameter(name: 'actions', type: 'java.util.List'), parameter(name: 'annotations', type: 'java.util.List'), parameter(name: 'conclusion', type: 'Map'), parameter(name: 'detailsURL', type: 'java.lang.String'), parameter(name: 'name', type: 'java.lang.String'), parameter(name: 'status', type: 'Map'), parameter(name: 'summary', type: 'java.lang.String'), parameter(name: 'text', type: 'java.lang.String'), parameter(name: 'title', type: 'java.lang.String'), ], doc: 'Publish customized checks to SCM platforms')
