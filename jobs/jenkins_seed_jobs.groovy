@@ -8,6 +8,9 @@ job('jenkins_seed_jobs') {
             remote {
                 github('lsmarsden/jenkins-jobs')
             }
+            extensions {
+                cleanBeforeCheckout()
+            }
         }
     }
     steps {

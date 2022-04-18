@@ -6,9 +6,13 @@ pipelineJob('build_pipeline') {
                     remote {
                         github('lsmarsden/jenkins-jobs')
                     }
+                    extensions {
+                        cleanBeforeCheckout()
+                    }
                 }
             }
             scriptPath('pipelines/build_pipeline.Jenkinsfile')
+
         }
     }
 }
